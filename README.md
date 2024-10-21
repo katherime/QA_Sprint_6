@@ -1,1 +1,17 @@
-# Sprint_6
+Проект с автотестами для сервиса «Яндекс.Самокат».
+
+В файле test_main_page находится тесты для главной страницы сайта.
+
+ *def test_display_and_text_questions_and_answers*
+
+В файле test_order_page находится тесты для страницы оформления заказа самоката.
+
+*def test_transition_through_header_button_to_order_page*
+*def test_transition_through_main_div_button_to_order_page*
+*def test_fill_the_form_correct_data_through_header_button*
+*def test_fill_the_form_correct_data_through_main_button*
+*def test_check_message_about_successful_order_with_correct_data*
+*def test_fill_the_form_and_transition_to_logotype_scooter*
+*def test_fill_the_form_and_transition_to_logotype_yandex*
+*def test_successful_order_through_header_button_to_yandex_page*
+*def test_successful_order_through_header_button_to_main_scooter_page*
