@@ -7,9 +7,8 @@ from locators.main_page_locators import MainPageLocators
 
 class TestMainPage:
 
-
     @allure.title('Проверка списка ответов и вопросов в блоке «Вопросы о важном»')
-    @allure.description('Прокликиваем каждый блок вопросов и сравниваем соответствие текста')
+    @allure.description('Прокликиваем каждый блок вопросов и сравниваем соответствие текста в блоке ответов')
     @pytest.mark.parametrize('number, expected_result', [(0, TextAnswers.answer_0), (1, TextAnswers.answer_1),
                                                          (2, TextAnswers.answer_2), (3, TextAnswers.answer_3),
                                                          (4, TextAnswers.answer_4), (5, TextAnswers.answer_5),
@@ -19,5 +18,3 @@ class TestMainPage:
         driver.get(WebsiteUrls.url_main_page)
         main_page.click_to_element(driver, MainPageLocators.BUTTON_COOKIE_LOCATOR)
         assert main_page.get_div_answers_text(driver, number) == expected_result
-
-

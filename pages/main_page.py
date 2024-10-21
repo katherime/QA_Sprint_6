@@ -5,7 +5,6 @@ from locators.order_page_locators import OrderPageLocators
 from data import WebsiteUrls
 
 
-
 class MainPage(BasePage):
 
     @allure.step('Возвращение текст ответа на вопрос при клике по блоку вопросов в "Вопросы о важном"')
@@ -33,4 +32,3 @@ class MainPage(BasePage):
         self.scrolling_to_element(MainPageLocators.MAIN_BUTTON_ORDER_SCOOTER)
         self.click_to_element(self.driver, MainPageLocators.MAIN_BUTTON_ORDER_SCOOTER)
         self.find_element_with_wait(OrderPageLocators.INPUT_NAME)
-
